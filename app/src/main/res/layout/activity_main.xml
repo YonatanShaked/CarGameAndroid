@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/hearts"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/heart_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/heart_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/heart_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/heart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/car"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="70dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/car_left"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/car" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/car_center"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:srcCompat="@drawable/car" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/car_right"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/car" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="right"
+        android:src="@drawable/arrow_right"
+        tools:ignore="HardcodedText,RelativeOverlap,RtlHardcoded,ImageContrastCheck"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="left"
+        android:src="@drawable/arrow_left"
+        app:fabSize="normal"
+        tools:ignore="HardcodedText,RtlHardcoded,ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_1_1"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_2_1"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_3_1"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_1_2"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_2_2"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_3_2"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_1_3"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_2_3"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_3_3"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_1_4"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_2_4"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_3_4"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="410dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_1_5"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_2_5"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_3_5"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_1_6"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_2_6"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/barrier_3_6"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/barrier" />
+
+    </LinearLayout>
+</RelativeLayout>
